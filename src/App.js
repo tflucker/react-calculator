@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AboutMe from './AboutMe';
 import './App.css';
 import KeyPadComponent from './KeyPadComponent';
 import ResultComponent from './ResultComponent';
@@ -61,32 +62,14 @@ class App extends Component {
           <ResultComponent result={this.state.result} />
           <KeyPadComponent onClick={this.onClick} />
         </div>
+        <div className="aboutMe-container">
+          <AboutMe />
+        </div>
       </div>
     );
   }
 
 
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
